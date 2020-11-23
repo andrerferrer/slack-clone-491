@@ -1,8 +1,9 @@
 require_relative "mario"
 
-puts "Clean the DB"
-Chatroom.destroy_all
-User.destroy_all
+# puts "Clean the DB"
+# Chatroom.destroy_all
+# User.destroy_all
+# Message.destroy_all
 
 puts 'Create a Chatroom'
 Chatroom.create(name: "general")
@@ -14,6 +15,9 @@ users_data = [
 ]
 
 users_data.each { |user_datum| User.create(user_datum) }
+
+puts "Create messages"
+Message.create! content: "Yahoo", user: User.first, chatroom: Chatroom.first
 
 puts "Done! Enjoy Yahoo!!!"
 
