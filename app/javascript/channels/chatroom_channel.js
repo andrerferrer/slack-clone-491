@@ -1,4 +1,4 @@
-// 2. Make the User subscribe to the channel when the user is in the chatroom page
+// Step 2. Make the User subscribe to the channel when the user is in the chatroom page
 
 import consumer from "./consumer";
 // we need to know if we are on the page with the chatroom

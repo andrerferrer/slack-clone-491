@@ -1,4 +1,4 @@
-# 3. Broadcast the new message to the channel when the message is created
+# Step 3. Broadcast the new message to the channel when the message is created
 
 class MessagesController < ApplicationController
   # all of this here is on the 3rd lecture of Rails -> Adv Routing

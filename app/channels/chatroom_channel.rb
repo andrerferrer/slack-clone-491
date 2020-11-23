@@ -1,3 +1,4 @@
+# Step 1. Generate the Chatroom
 class ChatroomChannel < ApplicationCable::Channel
   def subscribed
     chatroom = Chatroom.find(params[:id])
